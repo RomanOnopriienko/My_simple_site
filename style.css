@@ -13,7 +13,7 @@ main{
     border-radius:0px 7px;
     min-height: 90vh;
     text-align: justify;
-    background-color: aquamarine;
+background-color: aquamarine;
     padding: 10px 25px;
     display:flex;
     flex-direction: column;
