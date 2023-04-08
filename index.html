@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Introdus Myself</title>
+    <script>
+        
+    </script>
 </head>
 <body>
   <main>
@@ -14,7 +17,33 @@
     <h1>Roman Onopriienko</h1>
     </div>
     <div class="flex row">
-        <div style="margin-right: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsum odio voluptatem molestias ratione nihil porro hic excepturi dolorum enim unde explicabo libero tempora ab deleniti et dolor aliquid, itaque veniam facilis autem! Harum dicta hic ipsam iusto modi, recusandae delectus sint quos quaerat ipsum odio sit dolor repudiandae vero? Tenetur, quas beatae. Enim facere a magni sequi adipisci. Cupiditate sequi magnam asperiores tempore explicabo ducimus molestias consequatur ullam quas, fugit fuga, dolor ea nulla inventore sit nobis neque aliquid earum eum itaque rerum dolorem similique. Natus unde quaerat libero sed cupiditate tenetur obcaecati sunt amet ratione. Ad consequuntur et tenetur, facere nesciunt repellat accusamus quidem, odio officiis reiciendis deleniti voluptatem aliquam eum repudiandae quibusdam cum! Esse, iste illo quidem perspiciatis incidunt officia enim nihil excepturi? Suscipit sed minus aspernatur rerum quae eos exercitationem, consectetur cum! Doloribus velit nulla vitae unde quo? Id dolores a consequatur nemo non laborum quasi, doloremque, reiciendis tempora deleniti consequuntur molestias corrupti repudiandae dolorum ab illum, voluptatum provident. Quas quos, magni est omnis doloribus molestias ea dolorem eos atque cupiditate et vitae quam quis amet laudantium voluptatibus nobis labore expedita dicta error aliquid! Autem incidunt id, a est facere recusandae neque? Aspernatur quam veniam doloremque!</div>
+        <div style="margin-right: 20px;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsum odio voluptatem molestias ratione nihil porro hic excepturi dolorum enim unde explicabo libero tempora</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni placeat similique velit.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni placeat similique velit.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni placeat similique velit.</li>
+                </ul>
+            <p id="tag">Deleniti et dolor aliquid, itaque veniam facilis autem! Harum dicta hic ipsam iusto modi, recusandae delectus sint quos quaerat ipsum odio sit dolor repudiandae vero? Tenetur, quas beatae. Enim facere a magni sequi adipisci. Cupiditate sequi magnam asperiores tempore explicabo ducimus molestias consequatur ullam quas, fugit fuga, dolor ea nulla inventore sit nobis neque aliquid earum eum itaque rerum dolorem similique. Natus unde quaerat libero sed cupiditate tenetur obcaecati sunt amet ratione. Ad consequuntur et tenetur, facere nesciunt repellat accusamus quidem, odio officiis reiciendis deleniti voluptatem aliquam eum repudiandae quibusdam cum! Esse, iste illo quidem perspiciatis incidunt officia enim nihil excepturi? Suscipit sed minus aspernatur rerum quae eos exercitationem, consectetur cum! Doloribus velit nulla vitae unde quo? Id dolores a consequatur nemo non laborum quasi, doloremque, reiciendis tempora deleniti consequuntur molestias corrupti repudiandae dolorum ab illum, voluptatum provident. Quas quos, magni est omnis doloribus molestias ea dolorem eos atque cupiditate et vitae quam quis amet laudantium voluptatibus nobis labore expedita dicta error aliquid! Autem incidunt id, a est facere recusandae neque? Aspernatur quam veniam doloremque!</p>
+                <ul>
+                    <li>
+                        <p>Lorem llLLLLllL ipsum dolor sit.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Lorem  HHHHHHHH ipsum dolor sit.</p>
+                    </li>
+                    <li>
+                        <p>Lorem bbbbbbbb ipsum dolor sit.</p>
+                    </li>
+                </ul>
+        </div>
         <div class="flex column">
             <img src="MyFoto.jpeg" alt="MyFoto">
             <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum harum debitis odio quo doloribus cupiditate saepe minima, impedit eligendi aliquam qui atque aut dolor voluptatibus, labore nulla modi aperiam, esse veniam neque. Doloremque iure saepe quisquam soluta consectetur reprehenderit hic obcaecati porro, optio quae culpa facilis corporis aliquam consequatur veritatis totam voluptas. Magni aspernatur expedita explicabo fugit perferendis, fuga reprehenderit a laborum? At commodi facilis neque pariatur officia ut, odit aliquam facere, tempora, voluptatibus non quia libero eligendi molestiae ducimus?</div>
@@ -22,4 +51,29 @@
     </div>
 </main>  
 </body>
+<script>
+    let itemMath=document.getElementById('tag');
+     // let cssStyleDiteil="color:red; width:400px; height:400px; background-color:rgb(75,229,45,0.2); border-radius:50%; position: absolute;";
+   let g=function (radius=30,arrRound=[75,229,45,0.2]){
+
+        let cssStyleDiteil=" background-color:rgb("+arrRound[0]+", "+arrRound[1]+", "+arrRound[2]+", "+arrRound[3]+"); width:"+radius+"vh; height:"+radius+"vh; border-radius:50%; position: absolute;";
+        let diteil=document.createElement('div');
+        let cssButtom=Math.round(Math.random()*80)+'vh';
+        let cssLeft=Math.round(Math.random()*80)+'vh';
+        let cssChanges="transition:none; top:"+cssButtom+"; left:"+cssLeft;
+        cssStyleDiteil+=cssChanges;
+        diteil.id='round';
+        diteil.style=cssStyleDiteil;
+        return diteil ;
+    }
+
+    itemMath.appendChild(g(15));
+    itemMath.appendChild(g(30,[204,0,102,0.2]));
+    itemMath.appendChild(g(25,[0,102,0,0.3]));
+    itemMath.appendChild(g(25,[90,120,40,0.3]));
+    itemMath.appendChild(g(25,[30,20,80,0.3]));
+
+
+     
+</script>
 </html>
